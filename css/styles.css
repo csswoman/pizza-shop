@@ -123,6 +123,7 @@ a {
     border: none;
     box-shadow: var(--shadow);
     outline: none;
+    cursor: pointer;
 }
 
 .search, .order {
@@ -205,4 +206,18 @@ a {
     border-radius: 0px 20px 20px 0px;
     border-left: 1px solid #CDCACA;
     cursor: pointer;
+}
+
+.order {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.order a {
+    font-size: 40px;
+    font-family: var(--primary-font);
+    font-weight: bold;
+    text-shadow: var(--shadow);
+    color: var(--light-color);
 }

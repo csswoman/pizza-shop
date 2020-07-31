@@ -37,6 +37,8 @@ a {
     height: 60px;
     background-color: var(--primary-color);
     box-shadow: var(--shadow);
+    position: fixed;
+    top: 0px;
 }
 
 .navigation-content {
@@ -60,6 +62,7 @@ a {
     font-family: var(--primary-font);
     font-weight: bold;
     color: var(--light-color);
+    border-left: 3px solid #f0b1b3;
 }
 
 .cart {
@@ -77,7 +80,7 @@ a {
 .whats-new {
     display: flex;
     justify-content: center;
-    margin: 20px 0;
+    margin: 7% 0px 20px 0px;
 }
 
 .new {
@@ -288,4 +291,87 @@ a {
 button:active {
     transform: scale(1.2);
     transition: all ease 0.5s;
+}
+
+.flavor, .breakfast {
+    font-family: var(--primary-font);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    line-height: 0px;
+    width: 540px;
+    height: 180px;
+    margin: 10px
+}
+
+.third-row {
+    display: flex;
+}
+
+.flavor {
+    background-image: url(../images/flavor.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.breakfast {
+    background-image: url(../images/breakfast.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.flavor p:nth-child(1),
+.breakfast p:nth-child(1) {
+    color: var(--light-color);
+    font-weight: bold;
+    font-size: 40px;
+}
+
+.flavor p:nth-child(2),
+.breakfast p:nth-child(2) {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 20px;
+    text-align: center;
+}
+
+.flavor p, .breakfast p {
+    margin: 0px;
+    padding: 0x;
+    line-height: 40px;
+}
+
+.footer {
+    background-color: #0a0a0a;
+    height: 150px;
+}
+
+.social ul {
+    display: flex;
+}
+
+.social img {
+    height: 15px;
+    width: 15px;
+}
+
+.social ul li a {
+    padding: 15px;
+}
+
+.footer-menu ul li a {
+    border-left: 3px solid #2e2e2e;
+    color: white;
+}
+
+.navigation-content {
+    border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+}
+
+.new, .search, .order, .food-1, .food-2, .food-3, .flavor, .breakfast {
+    border-radius: 10px;
+}
+
+.menu ul li a {
+    border-left: 3px solid var(--primary-color);
 }

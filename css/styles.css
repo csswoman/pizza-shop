@@ -221,3 +221,71 @@ a {
     text-shadow: var(--shadow);
     color: var(--light-color);
 }
+
+.food-1, .food-2, .food-3 {
+    width: 354px;
+    height: 350px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 30px 5%;
+    text-shadow: var(--shadow);
+}
+
+.food-1 p, .food-2 p, .food-3 p {
+    margin: 0px;
+    padding: 0px;
+    color: var(--light-color);
+    font-family: var(--primary-font);
+    line-height: 40px;
+}
+
+.name p:nth-child(1) {
+    font-weight: bold;
+    font-size: 40px;
+}
+
+.name p:nth-child(2) {
+    font-weight: 400;
+    font-size: 30px;
+}
+
+.second-row {
+    display: flex;
+
+}
+
+.food-1 {
+    background-image: url(../images/food-1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.food-2 {
+    background-image: url(../images/food-2.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.food-3 {
+    background-image: url(../images/food-3.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.price button {
+    color: var(--light-color);
+    border: none;
+    background-color: var(--primary-color);
+    outline: none;
+    width: 70px;
+    height: 35px;
+    border-radius: 20px;
+    box-shadow: var(--shadow);
+}
+
+button:active {
+    transform: scale(1.2);
+    transition: all ease 0.5s;
+}
